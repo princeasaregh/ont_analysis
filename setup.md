@@ -3,6 +3,78 @@ title: "Setup"
 ---
 
 
+## Setting instructions
+
+Starting a New Course Repository
+    Create a new empty directory for the course.
+    cd into that directory and run: 
+quarto use template --no-prompt princeasaregh/github_website_creation_template
+Tidy the files for the new course (you can copy/paste this whole code block - unless you're on Mac, then you may need to use curl instead of wget): 
+# clean materials directory or files that you may not need
+rm materials/<insert_name_of_item+to+remove>
+# rename VS Code and Rproj files
+mv github_website_creation_template.code-workspace <name_of_new_directory>.code-workspace
+mv github_website_creation_template.Rproj <name_of_new_directory>.Rproj
+
+Edit the README file to suit your space
+Edit the course title in index.md.
+Edit the course title and github link in _quarto.yml.
+Some minimal files exists in materials/  directory. Edit the materials/_chapters.yml file to include a link to any new materials/... you create
+
+Create a new repository on GitHub, and then add/push your files as you would normally do for a new repository.
+After the first push, the site will be rendered to the gh-pages branch automatically. This may take a while (you can check the "Actions" tab of the repository to monitor its progress). Once the gh-pages branch has been created, go to the repository's "Settings > Pages" and select the gh-pages branch to render your pages.
+
+
+
+
+# fix path to logos
+sed 's/_extensions/_extensions\/cambiotraining/g' _quarto.yml > _temp.yml
+rm _quarto.yml; mv _temp.yml _quarto.yml
+
+
+mkdir <name_of_new_directory>
+cd <name_of_new_directory>
+git init
+git clone https://github.com/princeasaregh/github_website_creation_template.git
+mv github_website_creation_template/* .
+mv github_website_creation_template/.* .
+rm github_website_creation_template
+mv github_website_creation_template.code-workspace <name_of_new_directory>.code-workspace
+mv github_website_creation_template.Rproj <name_of_new_directory>.Rproj
+git add .
+git commit -m "birthdate"
+Add the project to your git repositories using any method of your choice.
+Make sure to change the repository visibility to public and for the git-hub pages to be rendered, allow read and write permissions to the workflows.
+If you go to the repository settings, then to "Actions" (on the left menu) and then tp general, you can set permissions to ?
+ 
+
+![Workflow permissions](../fig/workflow_permissions.png)
+
+
+If you do not see  the pages rendered automatically, you can rerun the failed jobs in git repository to make apply the new settings. Alternatively, make an update to any of the local files and push them to the git repository. 
+Once this is done, you should navigate to Pages under settings and select gh-branches under Build and deployment. Then click save.
+ 
+![FastQC quality report](../fig/github_pages.png)
+
+Refresh the page after a coiple of minutes. Your website should be deployed and made live at a specified URL at the top of the page.
+
+This repository contains course documents for carrying out sequencing analysis from ONT data
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## The setup instructions below were used for a workshop course in analysing bacterial genomes. You are free to use these or modify to fit your needs as appropriate.
 
 <!-- 
