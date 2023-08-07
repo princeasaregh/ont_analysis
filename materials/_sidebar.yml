@@ -1,0 +1,17 @@
+website:
+  sidebar:
+    - title: "Materials"
+      contents:
+        - materials.md
+        # Only edit from this line down
+        - section: "1. Introduction"
+          contents:
+            - materials/01-introduction/1.0-intro.md
+        - section: "2. Main Topic 1"
+          contents:
+            - materials/02-Main_Topic_1/2.1-Topic_2.1.md
+            - materials/02-Main_Topic_1/2.2-Topic_2.2.md
+        - section: "3. Main Topic 2"
+          contents:
+            - materials/03-Main_Topic_2/3.1-Topic_3.1.md
+            - materials/03-Main_Topic_2/3.2-Topic_3.2.md
