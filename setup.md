@@ -267,7 +267,7 @@ For your personal use, if you wish to use the latest version of these tools, jus
 Open a terminal, make sure you are in the conda base environment and run this command to install all required packages and their dependencies:
 
 ```bash
-mamba create -n qc_ont fastq-scan=1.0.0 fastqc=0.11.9 fastp=0.23.2 kraken2=2.1.2 bracken=2.7 multiqc=1.13a
+mamba create -n qc_ont fastq-scan=1.0.0 fastqc=0.11.9 fastp=0.23.2 nanoplot kraken2=2.1.2 bracken=2.7 multiqc=1.13a
 ```
 
 This creates an environment called `qc_ont` with the specified package versions and their dependencies.
@@ -279,6 +279,22 @@ Use the below command to install the packages in the `ont_qc` environment:
 ```bash
 conda install pandas=1.4.3 -n qc -c conda-forge 
 ```
+:::
+
+:::{.callout}
+### creating the `nanoplot` environment and installing required packages
+
+Open a terminal, make sure you are in the conda base environment and run this command to install all required packages and their dependencies:
+
+```bash
+mamba create -n nanoplot=1.41.6
+```
+
+This creates an environment called `nanoplot` with the specified package versions and their dependencies.
+
+
+**NB.** `nanoplot` depends on somepackages that may conflict the tools in the qc_ont environment above, hence the need to create a seperate environment for it.
+
 :::
 
 
