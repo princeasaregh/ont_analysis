@@ -262,15 +262,15 @@ For your personal use, if you wish to use the latest version of these tools, jus
 ### Mac OS
 
 :::{.callout}
-### creating the `ont_qc` environment and installing required packages
+### creating the `qc_ont` environment and installing required packages
 
 Open a terminal, make sure you are in the conda base environment and run this command to install all required packages and their dependencies:
 
 ```bash
-mamba create -n ont_qc fastq-scan=1.0.0 fastqc=0.11.9 fastp=0.23.2 kraken2=2.1.2 bracken=2.7 multiqc=1.13a
+mamba create -n qc_ont fastq-scan=1.0.0 fastqc=0.11.9 fastp=0.23.2 kraken2=2.1.2 bracken=2.7 multiqc=1.13a
 ```
 
-This creates an environment called `ont_qc` with the specified package versions and their dependencies.
+This creates an environment called `qc_ont` with the specified package versions and their dependencies.
 
 
 **NB.** The tools `fastq-scan and bracken` runs python scripts which require python libraries pandas, json, glob.  
