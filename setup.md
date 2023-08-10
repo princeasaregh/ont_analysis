@@ -300,16 +300,12 @@ This creates an environment called `nanoplot` with the specified package version
 
 :::{.callout}
 ### Installing required packages for [Assembly and Annotation]
-**NB.** For the Assembly and Annotation module, we will create two different environments. One for the assemly and QC tools and the other for the annotation.
+**NB.** For the Assembly and Annotation module, we will create two different environments. One for the assembly and QC tools and the other for the annotation.
 
 We will thus, create each environment seperately with the following names:
 
 ```bash
-mamba create -n assembly -c bioconda flye=2.9.2 medaka=1.8.0 quast=5.2.0 
-
-mamba create -n prokka -c bioconda prokka=1.14.6
-
-mamba create -n bakta -c bioconda bakta=1.6.1
+mamba create -n assembly_ont -c bioconda flye=2.9.2 medaka=1.8.0 quast=5.2.0 
 ```
 :::
 
@@ -367,16 +363,12 @@ This creates an environment called `nanoplot` with the specified package version
 
 :::{.callout}
 ### Installing required packages for [Assembly and Annotation]
-**NB.** For the Assembly and Annotation module, we will create two different environments. One for the assemly and QC tools and the other for the annotation.
+**NB.** For the Assembly and Annotation module, we will create two different environments. One for the assembly and QC tools and the other for the annotation.
 
 We will thus, create each environment seperately with the following names:
 
 ```bash
 mamba create -n assembly -c bioconda flye=2.9.2 quast=5.2.0 
-
-mamba create -n quast -c bioconda prokka=1.14.6
-
-mamba create -n bakta -c bioconda bakta=1.6.1
 ```
 :::
 
