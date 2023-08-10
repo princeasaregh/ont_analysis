@@ -305,9 +305,9 @@ This creates an environment called `nanoplot` with the specified package version
 We will thus, create each environment seperately with the following names:
 
 ```bash
-mamba create -n assembly -c bioconda flye=2.9.2 quast=5.2.0 
+mamba create -n assembly -c bioconda flye=2.9.2 medaka=1.8.0 quast=5.2.0 
 
-mamba create -n quast -c bioconda prokka=1.14.6
+mamba create -n prokka -c bioconda prokka=1.14.6
 
 mamba create -n bakta -c bioconda bakta=1.6.1
 ```
