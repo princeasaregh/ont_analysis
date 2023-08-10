@@ -299,99 +299,24 @@ This creates an environment called `nanoplot` with the specified package version
 
 
 :::{.callout}
-### creating the `mapping` environment and installing required packages
-
-run this command to install all required packages and their dependencies:
-
-```bash
-mamba create -n mapping bwa=0.7.17 samtools=1.15 bcftools=1.14 pysam=0.16.0.1 biopython=1.78
-```
-
-This creates an environment called `mapping` with the specified package versions and their dependencies.
-
-:::
-
-:::{.callout}
 ### Installing required packages for [Assembly and Annotation]
-**NB.** For the Assembly and Annotation module, we will create three different environments because there are conflicts in the conda recipes and it'll be tricky to get all the tools working in a single environment.
+**NB.** For the Assembly and Annotation module, we will create two different environments. One for the assemly and QC tools and the other for the annotation.
 
 We will thus, create each environment seperately with the following names:
 
 ```bash
-mamba create -n shovill -c bioconda shovill=1.1.0 
+mamba create -n assembly -c bioconda flye=2.9.2 quast=5.2.0 
 
-mamba create -n quast -c bioconda quast=5.2.0 
+mamba create -n quast -c bioconda prokka=1.14.6
 
 mamba create -n bakta -c bioconda bakta=1.6.1
 ```
 :::
 
-:::{.callout}
-### creating the `phylogenetics` environment and installing required packages
 
-run this command to install all required packages and their dependencies:
-
-```bash
-mamba create -n phylogenetics -c bioconda iqtree=2.2.0.3 snp-sites=2.5.1
-```
-
-This creates an environment called `phylogenetics` with the specified package versions and their dependencies.
-
-:::
-
-
-
-:::{.callout}
-### creating the `genotyping` environments and installing required packages
-
-**NB.** For the genotyping and AMR prediction, we will create five different environments because some tools require specific versions of python and other related packages hence we cannot install all the packages in a single environment.
-
-We will thus, create each environment seperately with the following names:
-
-1. mlst
-2. seroba
-3. spoligotyping
-4. tbprofiler
-5. ariba
-
-run the following commands to create the specified environment and install all required packages and their dependencies for:
-
-> mlst:
-
-```bash
-mamba create -n mlst mlst=2.22.1
-```
-
-> seroba:
-
-```bash
-mamba create -n seroba seroba=1.0.2
-```
-
-> spoligotyping:
-
-```bash
-mamba create -n spoligotyping spotyping=2.1
-```
-
-> tbprofiler:
-
-```bash
-mamba create -n tbprofiler tb-profiler=4.1.1
-```
-
-> ariba:
-
-```bash
-mamba create -n ariba ariba=2.14.6
-```
-
-These create the specified environment names `mlst`, `seroba`, `spoligotyping`, `tbprofiler` and `ariba` with the specified package versions and their dependencies.
-
-:::
 
 :::{.callout-note}
-### Specify version of toool to install
+### Specify version of tool to install
 
 As you may see, all the tools installed have specified version numbers added to the tool names in the format `tool=version_numer`. This allows us to install the exact version of tools used for the training.
 
@@ -441,73 +366,20 @@ This creates an environment called `nanoplot` with the specified package version
 
 
 :::{.callout}
-### creating the `mapping` environment and installing required packages
-
-run this command to install all required packages and their dependencies:
-
-```bash
-mamba create -n mapping bwa=0.7.17 samtools=1.15 bcftools=1.14 pysam=0.16.0.1 biopython=1.78
-```
-
-This creates an environment called `mapping` with the specified package versions and their dependencies.
-
-**NB.** Creating the pseudogenomes step runs python scripts which require some python libraries.  
-Use the below command to install the packages in the `mapping` environment:
-
-```bash
-conda install pandas -n qc -c conda-forge 
-```
-:::
-
-
-:::{.callout}
-### creating the `genotyping` environment and installing required packages
-
-**NB.** For the genotyping and AMR prediction, we will create five different environments because some tools require specific versions of python and other related packages hence we cannot install all the packages in a single environment.
+### Installing required packages for [Assembly and Annotation]
+**NB.** For the Assembly and Annotation module, we will create two different environments. One for the assemly and QC tools and the other for the annotation.
 
 We will thus, create each environment seperately with the following names:
 
-1. mlst
-2. seroba
-3. spoligotyping
-4. tbprofiler
-5. ariba
-
-run the following commands to create the specified environment and install all required packages and their dependencies for:
-
-> mlst:
-
 ```bash
-mamba create -n mlst mlst=2.22.1
+mamba create -n assembly -c bioconda flye=2.9.2 quast=5.2.0 
+
+mamba create -n quast -c bioconda prokka=1.14.6
+
+mamba create -n bakta -c bioconda bakta=1.6.1
 ```
-
-> seroba:
-
-```bash
-mamba create -n seroba seroba=1.0.2
-```
-
-> spoligotyping:
-
-```bash
-mamba create -n spoligotyping spotyping=2.1
-```
-
-> tbprofiler:
-
-```bash
-mamba create -n tbprofiler tb-profiler=4.1.1
-```
-
-> ariba:
-
-```bash
-mamba create -n ariba ariba=2.14.6
-```
-
-These create the specified environment names `mlst`, `seroba`, `spoligotyping`, `tbprofiler` and `ariba` with the specified package versions and their dependencies.
-
 :::
+
 
 
 :::{.callout-note}
