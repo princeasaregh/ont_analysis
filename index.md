@@ -1,9 +1,14 @@
 ---
-title: "github website template built on quarto"
+title: "Analysis of Oxford Nanopore Technology (ONT) Data"
 author: "Prince Asare, Andries van Tonder"
 date: today
 ---
 
+This site has been temporarly designed to host analysis of ONT data.
+
+This course website is still under development and should only be used for training purposes.
+
+<!--
 :::{.panel-tabset}
 
 # Template for hosting your content on github pages
@@ -86,3 +91,5 @@ We thank the wider community for publicly sharing training resources, including:
 - The [Carpentries](https://carpentries.org/) project
 
 :::
+
+-->

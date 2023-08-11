@@ -6,3 +6,5 @@
 
 
 This repository contains course documents for carrying out sequencing analysis from ONT data
+
+[Click here](https://princeasaregh.github.io/ont_analysis/) to view the course webpage
