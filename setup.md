@@ -277,7 +277,7 @@ This creates an environment called `qc_ont` with the specified package versions 
 Use the below command to install the packages in the `ont_qc` environment:
 
 ```bash
-conda install pandas=1.4.3 -n qc -c conda-forge 
+conda install pandas=1.4.3 -n qc_ont -c conda-forge 
 ```
 :::
 
@@ -305,7 +305,7 @@ This creates an environment called `nanoplot` with the specified package version
 We will thus, create each environment seperately with the following names:
 
 ```bash
-mamba create -n assembly_ont -c bioconda flye=2.9.2 medaka=1.8.0 quast=5.2.0 
+mamba create -n assembly_ont -c bioconda flye=2.9.2 medaka=1.8.0 quast=5.2.0 prokka=1.14.6
 ```
 :::
 
@@ -338,7 +338,7 @@ This creates an environment called `qc_ont` with the specified package versions 
 Use the below command to install the packages in the `qc` environment:
 
 ```bash
-conda install pandas -n qc -c conda-forge 
+conda install pandas -n qc_ont -c conda-forge 
 ```
 
 :::
@@ -368,7 +368,7 @@ This creates an environment called `nanoplot` with the specified package version
 We will thus, create each environment seperately with the following names:
 
 ```bash
-mamba create -n assembly -c bioconda flye=2.9.2 quast=5.2.0 
+mamba create -n assembly_ont -c bioconda flye=2.9.2 medaka=1.8.0 quast=5.2.0 prokka=1.14.6
 ```
 :::
 
