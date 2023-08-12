@@ -274,7 +274,7 @@ This creates an environment called `qc_ont` with the specified package versions 
 
 
 **NB.** The tools `fastq-scan and bracken` runs python scripts which require python libraries pandas, json, glob.  
-Use the below command to install the packages in the `ont_qc` environment:
+Use the below command to install the packages in the `qc_ont` environment:
 
 ```bash
 conda install pandas=1.4.3 -n qc_ont -c conda-forge 
@@ -335,7 +335,7 @@ This creates an environment called `qc_ont` with the specified package versions 
 
 
 **NB.** The tools `fastq-scan and bracken` runs python scripts which require python libraries pandas, json, glob.  
-Use the below command to install the packages in the `qc` environment:
+Use the below command to install the packages in the `qc_ont` environment:
 
 ```bash
 conda install pandas -n qc_ont -c conda-forge 
