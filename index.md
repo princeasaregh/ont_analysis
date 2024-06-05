@@ -8,7 +8,7 @@ This site has been temporarly designed to host analysis of ONT data.
 
 This course website is still under development and should only be used for training purposes.
 
-Click [here](setup.md) to access the course [setup page](setup.md) or [here](materials.md) to access the [course materials](materials.md).
+Click [here](setup.md) to access the course [setup page](setup.md) or [here](materials.md) to access the [course materials and instructions](materials.md).
 
 <!--
 :::{.panel-tabset}
