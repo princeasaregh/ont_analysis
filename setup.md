@@ -309,7 +309,7 @@ We will thus, create each environment seperately with the following names:
 mamba create -n flye -c bioconda flye=2.9.2
 ```
 ```bash
-mamba create -n medaka -c bioconda medaka
+mamba create -n medaka medaka
 ```
 ```bash
 mamba create -n quast -c bioconda quast=5.2.0
@@ -383,7 +383,7 @@ We will thus, create each environment seperately with the following names:
 mamba create -n flye -c bioconda flye=2.9.2
 ```
 ```bash
-mamba create -n medaka -c bioconda medaka
+mamba create -n medaka medaka
 ```
 ```bash
 mamba create -n quast -c bioconda quast=5.2.0
