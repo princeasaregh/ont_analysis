@@ -300,12 +300,23 @@ This creates an environment called `nanoplot` with the specified package version
 
 :::{.callout}
 ### Installing required packages for [Assembly and Annotation]
-**NB.** For the Assembly and Annotation module, we will create two different environments. One for the assembly and QC tools and the other for the annotation.
+**NB.** For the Assembly and Annotation module, we will create several different environments, as many as the number of tools to be used. This is due to package conflicts. We are currently not able to place all the required tools in the same conda environment.
+.
 
 We will thus, create each environment seperately with the following names:
 
 ```bash
-mamba create -n assembly_ont -c bioconda flye=2.9.2 medaka=1.8.0 quast=5.2.0 prokka=1.14.6
+mamba create -n flye -c bioconda flye=2.9.2
+```
+```bash
+mamba create -n medaka -c bioconda medaka
+```
+```bash
+mamba create -n quast -c bioconda quast=5.2.0
+```
+
+```bash
+mamba create -n prokka -c bioconda prokka=1.14.6
 ```
 :::
 
@@ -363,12 +374,23 @@ This creates an environment called `nanoplot` with the specified package version
 
 :::{.callout}
 ### Installing required packages for [Assembly and Annotation]
-**NB.** For the Assembly and Annotation module, we will create two different environments. One for the assembly and QC tools and the other for the annotation.
+**NB.** For the Assembly and Annotation module, we will create several different environments, as many as the number of tools to be used. This is due to package conflicts. We are currently not able to place all the required tools in the same conda environment.
+.
 
 We will thus, create each environment seperately with the following names:
 
 ```bash
-mamba create -n assembly_ont -c bioconda flye=2.9.2 medaka=1.8.0 quast=5.2.0 prokka=1.14.6
+mamba create -n flye -c bioconda flye=2.9.2
+```
+```bash
+mamba create -n medaka -c bioconda medaka
+```
+```bash
+mamba create -n quast -c bioconda quast=5.2.0
+```
+
+```bash
+mamba create -n prokka -c bioconda prokka=1.14.6
 ```
 :::
 
