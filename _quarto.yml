@@ -12,6 +12,7 @@ project:
     - materials.md
     - materials/*
     - "!materials/*/no_render"
+    - unix_cheat_sheet.md
 
 format: courseformat-html
 
