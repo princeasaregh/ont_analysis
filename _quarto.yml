@@ -46,6 +46,8 @@ website:
         href: setup.md
       - text: "Materials"
         href: materials.md
+        text: "Unix Cheat Sheet"
+        href: unix_cheat_sheet.md
     right:
       - icon: github
         href: https://github.com/princeasaregh
